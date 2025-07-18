@@ -25,16 +25,23 @@ header {
   color: #fff;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Space items evenly */
-  align-items: center; /* Center items vertically */
-  position: relative; /* Add position relative */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  display: flex;
+  /* Use flexbox */
+  justify-content: space-between;
+  /* Space items evenly */
+  align-items: center;
+  /* Center items vertically */
+  position: relative;
+  /* Add position relative */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
 }
 
 .logo-container {
-  display: flex; /* Use flexbox */
-  align-items: center; /* Align items vertically */
+  display: flex;
+  /* Use flexbox */
+  align-items: center;
+  /* Align items vertically */
 }
 
 .logo-container img {
@@ -44,32 +51,40 @@ header {
 
 header h1 {
   font-size: 36px;
-  margin: 0; /* Remove default margin */
-  margin-left: auto; /* Move the h1 to the right */
+  margin: 0;
+  /* Remove default margin */
+  margin-left: auto;
+  /* Move the h1 to the right */
 }
 
 
 nav ul {
   list-style-type: none;
-  display: none; /* Hide the nav menu by default */
+  display: none;
+  /* Hide the nav menu by default */
   position: absolute;
-  top: 100%; /* Position below the header */
+  top: 100%;
+  /* Position below the header */
   left: 0;
-  background-color: #333; /* Background color for the menu */
+  background-color: #333;
+  /* Background color for the menu */
   padding: 10px 0;
   width: 100%;
-  text-align: center; /* Center menu items horizontally */
+  text-align: center;
+  /* Center menu items horizontally */
 }
 
 
 nav ul li {
   display: inline;
   margin-right: 20px;
-  padding: 5px 10px; /* Add padding */
+  padding: 5px 10px;
+  /* Add padding */
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Remove margin from the last item */
+  margin-right: 0;
+  /* Remove margin from the last item */
 }
 
 
@@ -85,17 +100,21 @@ header:hover nav ul {
 
 #hero {
   background-image: linear-gradient(to right, #FFFF00, #000000);
-  color: #fff; /* Text color */
+  color: #fff;
+  /* Text color */
   text-align: center;
-  padding: 260px 20px; /* Adjust padding as needed */
-  margin-bottom: 10px; /* Adjust margin as needed */
+  padding: 260px 20px;
+  /* Adjust padding as needed */
+  margin-bottom: 10px;
+  /* Adjust margin as needed */
 }
 
 
 #hero h2 {
   font-size: 48px;
   margin-bottom: 20px;
-  background: linear-gradient(to left, #ff4500, #000000); /* Gradient text color */
+  background: linear-gradient(to left, #ff4500, #000000);
+  /* Gradient text color */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -106,7 +125,8 @@ header:hover nav ul {
   margin-bottom: 40px;
   max-width: 600px;
   margin: 0 auto 40px;
-  background: linear-gradient(to left, #ff4500, #000000); /* Gradient text color */
+  background: linear-gradient(to left, #ff4500, #000000);
+  /* Gradient text color */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -127,39 +147,75 @@ header:hover nav ul {
   background-color: #900;
 }
 
-#about, #models, #experience {
+.loadmore {
+  display: block;
+  background: linear-gradient(to right, #ff4500, #000000);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loadmore:hover {
+  background: linear-gradient(to left, #ff4500, #000000);
+}
+
+#about,
+#models,
+#experience {
   padding: 50px 0;
 }
 
 #about .container {
   background-color: #fff;
   padding: 40px;
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow */
 }
 
 #models .container {
   background-color: #fff;
   padding: 40px;
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow */
 }
 
 #experience .container {
   background-color: #fff;
   padding: 40px;
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow */
   margin-bottom: 5%;
-  position: relative; /* Set position relative for positioning the button */
+  position: relative;
+  /* Set position relative for positioning the button */
 }
 
 #experience .btn {
-  position: absolute; /* Set position absolute for positioning the button */
-  bottom: 20px; /* Adjust the distance from the bottom */
-  right: 20px; /* Adjust the distance from the right */
+  position: absolute;
+  /* Set position absolute for positioning the button */
+  bottom: 20px;
+  /* Adjust the distance from the bottom */
+  right: 20px;
+  /* Adjust the distance from the right */
 }
 
+#experience .loadmore {
+  display: block;
+  margin: 20px auto 0;
+  /* Center horizontally with top margin */
+  text-align: center;
+  /* Center text */
+}
 
 .model-card {
   text-align: center;
